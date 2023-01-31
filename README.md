@@ -7,7 +7,6 @@ To connect or sync docker with postgresql use the below command in prompt:
 docker run --name postgresql -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=my password -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres
 This will pull the image to the docker container. 
 Using python script databse can be populated with information from API using the URL (installed packages before execution py -m pip install python-calendarific and py -m pip install urllib3)
-Using CRON schedule builder you can run the workflow. Select crontab generator where you can select the time and days required to run and click on generate.
 Create github pipeline using following steps:
 1. Go to actions and click on set up workflow under python application.
 2. For my testing I removed link block under the preview script then start commited.
